@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>单击下面的代码进行for循环</p>
+    <button onclick="myFunction()">点我</button>
+    <p id="demo"></p>
+    <script>
+        function myFunction() {
+            var x = "",
+                i;
+            // for (i = 1; i < 6; i++) {
+            //     x = "第" + i + "次循环" + "<br>";
+
+            // }
+            for (i = 1; i < 6; i++) {
+                x = x + "第" + i + "次循环" + "<br>";
+
+            }
+            document.getElementById("demo").innerHTML = x;
+        }
+    </script>
+</body>
+
+</html>
