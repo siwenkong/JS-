@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="num" type="number" min="100" max="500" required>
+    <button onclick="myFunction()">验证</button>
+    <p>如果输入的数字小于100或者大于500，会显示错误信息</p>
+    <p id="msg"></p>
+
+    <script>
+        //判断输入是否是数字
+        function isNumber(n) {
+            return !isNaN(parseFloat(n)) && isFinite(n);
+        }
+
+        function myFunction() {
+            var text = "";
+            var inpObj = document.getElementById("num");
+            if (!isNumber(inpObj.value)) {
+                text = "你输入的不是数字!";
+            } else if (inpObj.validity.rangeOverflow) {
+                text = "输入的值太大了";
+            } else if (inpObj.validity.rangeUnderflow) {
+                text = "输入的值太小了";
+            } else {
+                text = "输入正确";
+            }
+            document.getElementById("msg").innerHTML = text;
+        }
+    </script>
+</body>
+
+</html>

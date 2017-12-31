@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <input id="num" type="number" min="100" max="300" required>
+    <button onclick="myFunction()">验证</button>
+    <p id="msg"></p>
+    <script>
+        function myFunction() {
+            var inpObj = document.getElementById("num");
+            if (inpObj.checkValidity() == false) {
+                document.getElementById("msg").innerHTML = inpObj.validationMessage;
+            } else {
+                document.getElementById("msg").innerHTML = "输入正确";
+            }
+        }
+    </script>
+</body>
+
+</html>
