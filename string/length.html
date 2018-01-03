@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">var的长度</button>
+    <p id="demo1"></p>
+
+    <script>
+        var s = "hello world!";
+        var btn1 = document.getElementById("btn1");
+        var demo1 = document.getElementById("demo1");
+        btn1.onclick = function() {
+            demo1.innerHTML = s.length;
+        }
+    </script>
+</body>
+
+</html>
