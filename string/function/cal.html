@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+
+<body>
+    <!-- 用构造函数的方式定义加法(add)函数、
+    减法(subtract)函数、乘法(multiply)函数和除法(divide)函数，
+    并计算21 * 32 + 24 / 3 - 5的值。 
+    <script>
+        var add = new Function('num1', 'num2', 'return num1+num2;');
+        var subtract = new Function('num1', 'num2', 'return num1-num2;');
+        var multiply = new Function('num1', 'num2', 'return num1 * num2;');
+        var divide = new Function('num1', 'num2', 'return num1 / num2;');
+        var mul1 = multiply('21', '32');
+        var div1 = divide('24', '3');
+        var add1 = add(mul1, div1);
+        var sub1 = subtract(add1, '5');
+
+        console.log(sub1);
+    </script> -->
+
+    <!-- 用function声明的方式，那么定义两个函数：
+    加法(add)函数和减法(subtract)函数，并计算21 + 32 - 24的值
+    <script>
+        function add(num1, num2) {
+            return num1 + num2;
+        }
+
+        function substract(num1, num2) {
+            return num1 - num2;
+        }
+        console.log(substract(add(21, 32), 24));
+    </script> -->
+
+    <!-- 用var分别去定义加法(add)函数、减法(subtract)函数和乘法(multiply)函数，
+    并计算出21 - 32 + 24 * 5的值。
+    <script>
+        var add = function(num1, num2) {
+            return num1 + num2;
+        }
+        var substract = function(num1, num2) {
+            return num1 - num2;
+        }
+        var multiply = function(num1, num2) {
+            return num1 * num2;
+        }
+        console.log(add(substract(21, 32), multiply(24, 25)));
+    </script> -->
+</body>
+
+</html>

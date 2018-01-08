@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 写出一个加法(add)函数，并在其内部定义一个函数(isNumber)，用来判断add的参数是否可以转化为数字类型进行相加，
+        
+        如果可以，就在页面中输出结果；
+        
+        如果不能就退出add，给出提示“请传入数字类型的参数”。 -->
+    <script>
+        function add(num1, num2) {
+            // var sum = 0;
+            function isNumber() {
+                if ((typeof(num1) == "number") && (typeof(num2) == "number")) {
+                    // sum = num1 + num2;
+                    console.log(num1 + num2);
+                } else {
+                    console.log('请传入数字类型的参数');
+                }
+            }
+            isNumber();
+            // console.log(sum);
+        }
+        add(1, 2);
+    </script>
+</body>
+
+</html>
