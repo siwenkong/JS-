@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var person = {
+            setPerson(property, value) {
+                person[property] = value;
+            }
+        }
+        person.setPerson('name', 'xiaoming');
+        person.setPerson('age', 18);
+        person.setPerson('sex', 'male');
+        console.log('name:' + person.name + ';' + 'age:' + person.age + ';' + 'sex:' + person.sex);
+    </script>
+</body>
+
+</html>
