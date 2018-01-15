@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 给一个人(person)通过方法(setPerson)添加属性(name: 'xm', age: 18, sex: 'male')。
+        
+        该方法接收property和value 2个参数 -->
+    <script>
+        var person = {
+            setPerson(property, value) {
+                person[property] = value;
+            }
+        }
+        person.setPerson('name', 'xiaoming');
+        person.setPerson('age', 18);
+        person.setPerson('sex', 'male');
+        console.log('name:' + person.name + ';' + 'age:' + person.age + ';' + 'sex:' + person.sex);
+    </script>
+</body>
+
+</html>

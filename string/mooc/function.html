@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 用构造函数的方式分别定义对象和数组，并向其中添加一些内容，
+        // 比如对象添加姓名、性别等等，数组添加一组数等等，最后将对象和数组输出在页面上。
+        function Person(name, age, sex) {
+            this.name = name;
+            this.age = age;
+            this.sex = sex;
+
+        }
+        var arr = new Array([1], [2], [3]);
+        var xm = new Person('xiaoming', '18', 'male');
+        console.log(xm.name);
+        console.log(arr.length);
+    </script>
+</body>
+
+</html>
