@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style type="text/css">
+        p {
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <p>测试</p>
+    <script>
+        // 写一个操作css的函数，要求第一个参数传DOM元素(elem)，第二个参数传属性名，第三个参数传属性值。
+        // 如果只有两个参数，则返回属性的值；如果有三个参数则设置属性值
+        function css() {
+            tag = arguments[0];
+            style_name = arguments[1];
+            style_value = arguments[2];
+            if (arguments.length < 2) {
+                console.log("请传入正确的参数！");
+            } else if (arguments.length == 2) {
+                console.log(arguments[1]);
+            } else if (arguments.length == 3) {
+                document.getElementsByTagName(tag)[0].style[style_name] = style_value;
+            }
+        }
+        css("p", "orange");
+        css("p", "fontSize", "25px");
+    </script>
+</body>
+
+</html>
